@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Bùi Đăng Khoa]
+ * MSSV:      [PS48500]
+ * Lớp:       [COM108_CS21302]
  *****************************************************************************/
 
 //  BÀI 2: XÂY DỰNG CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH  
@@ -19,12 +19,22 @@
 
 int main(){
     
-    // Khai báo biến
+    float a, b; 
+    printf("Nhap he so a: ");
+    scanf("%f", &a); 
+    printf("Nhap he so b: ");
+    scanf("%f", &b); 
 
+    if(a == 0){
+        if(b == 0){
+            printf("Phuong trinh co vo so nghiem.\n");
+        } else {
+            printf("Phuong trinh vo nghiem.\n");
+        }
+    } else {
+        float x = -b / a; 
+        printf("Phuong trinh co nghiem x = %.2f\n", x);
+    }
 
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
-
+    return 0;
 }
